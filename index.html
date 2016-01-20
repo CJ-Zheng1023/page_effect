@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="css/picture-view/picture-view.css" type="text/css"/>
+    <link rel="stylesheet" href="css/button-module/button-module.css" type="text/css"/>
+    <link rel="stylesheet" href="css/zoom-view/zoom-view.css" type="text/css"/>
+    <title>页面各种效果展示</title>
+</head>
+<body>
+    <!-- 右侧导航栏模块开始-->
+    <div class="right-side">
+        <ul>
+            <li>
+                <a href="#" id="shopping_list">
+                    <div class="fa fa-shopping-cart fa-2x cart-logo"></div>
+                    <div class="text-info">
+                        购<br>物<br>车<br>
+                    </div>
+
+                </a>
+
+            </li>
+        </ul>
+    </div>
+    <!-- 右侧导航栏模块结束-->
+
+    <div class="main">
+        <!-- 图片自动切换模块开始-->
+        <div class="picture-view-main">
+            <h1>
+                图片自动滑动、移入移出鼠标效果
+            </h1>
+            <!-- 图片切换部分开始-->
+            <div class="picture-show">
+                <div class="picture-show-wrapper">
+                    <div class="figure">
+                        <img src="css/picture-view/images/1_lg.jpg" />
+                        <div class="figcaption">
+                            阿圭罗
+                        </div>
+                    </div>
+                    <div class="figure">
+                        <img src="css/picture-view/images/2_lg.jpg" />
+                        <div class="figcaption">
+                            伊瓜因
+                        </div>
+                    </div>
+                    <div class="figure">
+                        <img src="css/picture-view/images/3_lg.jpg" />
+                        <div class="figcaption">
+                            吉鲁
+                        </div>
+                    </div>
+                    <div class="figure">
+                        <img src="css/picture-view/images/1_lg.jpg" />
+                        <div class="figcaption">
+                            阿圭罗
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 图片切换部分结束-->
+
+            <!-- 图片列表部分开始-->
+            <div class="picture-list">
+                <ul class="clearfix">
+                    <li>
+                        <img src="css/picture-view/images/1_sm.jpg" />
+                        <div class="mouse-over"></div>
+                        <i class="arrow"></i>
+                    </li>
+                    <li>
+                        <img src="css/picture-view/images/2_sm.jpg" />
+                        <div></div>
+                        <i></i>
+                    </li>
+                    <li>
+                        <img src="css/picture-view/images/3_sm.jpg" />
+                        <div></div>
+                        <i></i>
+                    </li>
+                    <li>
+                        <img src="css/picture-view/images/1_sm.jpg" />
+                        <div></div>
+                        <i></i>
+                    </li>
+                </ul>
+            </div>
+            <!-- 图片列表部分开结束-->
+
+        </div>
+        <!-- 图片自动切换模块开结束-->
+
+        <!-- 按钮效果模块开始-->
+        <div class="button-module">
+            <h1>按钮以及响应效果</h1>
+            <div class="button-group">
+                <!-- 第一个按钮开始-->
+                <a href="javascript:void(0)" class="button button-save" id="save_btn">
+                    <i class="fa fa-save"></i>保存
+                </a>
+                <div class="tooltip-fixed">
+                    <div class="pic-wrapper">
+                        <i class="fa fa-check fa-4x"></i>
+                        <div class="pic-cover"></div>
+                    </div>
+                    <div class="text-wrapper">
+                        <span>保存成功！</span>
+                    </div>
+                </div>
+                <!-- 第一个按钮结束-->
+
+                <!-- 第二个按钮开始-->
+                <a href="javascript:void(0)" class="button button-click-me" id="click_me_btn">
+                    <i class="fa fa-magic"></i>点我
+                    <div class="message-tip">
+                        <i class="fa fa-close message-tip-close"></i>
+                        <div class="message-content">
+                            HELLO!
+                        </div>
+                        <i class="message-tip-arrow"></i>
+                    </div>
+                </a>
+                <!-- 第二个按钮结束-->
+
+                <!-- 第三个个按钮开始-->
+                <a href="javascript:void(0)" class="button button-add-cart" id="add_cart_btn">
+                    <i class="fa fa-shopping-cart"></i>添加到购物车
+                </a>
+                <div class="production">
+                    <img src="css/button-module/images/production.jpeg" width="50" height="50" />
+                </div>
+                <!-- 第三个按钮结束-->
+
+
+            </div>
+
+        </div>
+        <!-- 按钮效果模块结束-->
+
+        <!-- 放大镜浏览图片模块开始-->
+        <div class="zoom-view-main">
+            <h1>放大镜浏览图片（模仿淘宝）</h1>
+            <h2 style="color: blue;margin-top: 30px;">to be continued...</h2>
+        </div>
+        <!-- 放大镜浏览图片模块结束-->
+
+    </div>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/picture-view/picture-view.js"></script>
+    <script src="js/button-module/button-module.js"></script>
+</body>
+</html>

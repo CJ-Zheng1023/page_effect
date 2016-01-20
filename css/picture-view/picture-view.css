@@ -1,0 +1,76 @@
+.picture-view-main{
+    padding: 100px 0;
+    text-align: center;
+}
+.picture-view-main h1{
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+.picture-view-main .picture-show{
+    height: 230px;
+    overflow-y: hidden;
+    margin: 0 auto;
+    width: 340px;
+}
+.picture-view-main .picture-show .picture-show-wrapper{
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+    transform: translateY(0);
+    position: relative;
+}
+.picture-view-main .picture-show .picture-show-wrapper .figure{
+    position: relative;
+    height: 230px;
+}
+.picture-view-main .picture-show .picture-show-wrapper .figure img{
+    height: 100%;
+    width: 100%;
+}
+.picture-view-main .picture-show .picture-show-wrapper .figure .figcaption{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.7;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.1em;
+}
+.picture-view-main .picture-list{
+    margin: 2px auto 0 auto;
+    width: 340px;
+}
+.picture-view-main .picture-list ul{
+    list-style: none;
+}
+.picture-view-main .picture-list ul li{
+    float: left;
+    padding-right: 1px;
+    position: relative;
+}
+.picture-view-main .picture-list ul li .arrow{
+    position: absolute;
+    border-width: 0 4px 4px 4px;;
+    border-color: transparent transparent rgb(255,255,255) transparent;
+    border-style: solid;
+    top: -6px;
+    left: 50%;
+    margin-left: -2px;
+}
+.picture-view-main .picture-list ul li>div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.6);
+}
+.picture-view-main .picture-list ul li .mouse-over{
+    background-color: transparent;
+    cursor: pointer;
+}
