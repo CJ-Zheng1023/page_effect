@@ -1,14 +1,49 @@
 .zoom-view-main{
-    padding: 80px 0;
+    padding: 80px 30px;
 }
 .zoom-view-main h1{
     margin-bottom: 30px;
+}
+.zoom-view-main .view-box-wrapper{
+    float: left;
 }
 .zoom-view-main .view-box{
     width: 400px;
     height: 400px;
     position: relative;
     border: 1px solid rgb(239,237,240);
+}
+.zoom-view-main .product-form{
+    padding: 20px 0;
+    border: 1px solid rgb(239,237,240);
+    float: right;
+    width: 600px;
+}
+.zoom-view-main .product-form h1{
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.zoom-view-main .product-form .price-box{
+    background-color: #FFF2E8;
+    padding: 30px 10px;
+    text-align: left;
+    margin: 0 30px;
+}
+.zoom-view-main .zoom-box{
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 405px;
+    position: absolute;
+    border: 1px solid rgb(239,237,240);
+    overflow: hidden;
+    display: none;
+}
+.zoom-view-main .zoom-box img{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .zoom-view-main .view-box .view-box-selector{
     position: absolute;

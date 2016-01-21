@@ -50,6 +50,7 @@ var zoomView=(function($){
     function pictureMouseOver(){
         $(".zoom-view-main .picture-list ul li img").mouseover(function(){
             $(".zoom-view-main .view-box img").attr("src","css/zoom-view/images/"+($(this).parent().index()+1)+"_md.jpg");
+            $(".zoom-view-main .zoom-box img").attr("src","css/zoom-view/images/"+($(this).parent().index()+1)+"_md.jpg");
             $(this).addClass("active").parent().siblings().find("img").removeClass("active");
         })
     }
@@ -58,9 +59,15 @@ var zoomView=(function($){
             "width":SELECTOR_WIDTH,
             "height":SELECTOR_HEIGHT
         })
+        $(".zoom-view-main .zoom-box img").css({
+            "width":$(".zoom-view-main .view-box").innerWidth()*$(".zoom-view-main .zoom-box").innerWidth()/SELECTOR_WIDTH,
+            "height":$(".zoom-view-main .view-box").innerHeight()*$(".zoom-view-main .zoom-box").innerHeight()/SELECTOR_HEIGHT
+        })
+
         $(".zoom-view-main .view-box").bind({
             mouseover:function(){
                 $(".zoom-view-main .view-box .view-box-selector").show();
+                $(".zoom-view-main .zoom-box").show();
             },
             mousemove:function(e){
                 var mouseX=e.pageX-$(this).offset().left;
@@ -85,9 +92,16 @@ var zoomView=(function($){
                     "left":selectorX,
                     "top":selectorY
                 })
+                var left=(selectorX+SELECTOR_WIDTH)*$(".zoom-view-main .zoom-box img").innerWidth()/$(".zoom-view-main .view-box").innerWidth()-$(".zoom-view-main .zoom-box").innerWidth();
+                var top=(selectorY+SELECTOR_HEIGHT)*$(".zoom-view-main .zoom-box img").innerHeight()/$(".zoom-view-main .view-box").innerHeight()-$(".zoom-view-main .zoom-box").innerHeight();
+                $(".zoom-view-main .zoom-box img").css({
+                    "left":-left,
+                    "top":-top
+                })
             },
             mouseout:function(){
                 $(".zoom-view-main .view-box .view-box-selector").hide();
+                $(".zoom-view-main .zoom-box").hide();
             }
         })
     }
