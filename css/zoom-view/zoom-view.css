@@ -10,6 +10,12 @@
     position: relative;
     border: 1px solid rgb(239,237,240);
 }
+.zoom-view-main .view-box .view-box-selector{
+    position: absolute;
+    background-image: url("images/selector.png");
+    background-repeat: repeat;
+    display: none;
+}
 .zoom-view-main .view-box .zoom-icon{
     position: absolute;
     right: 0;
@@ -23,34 +29,42 @@
     width: 100%;
 }
 .zoom-view-main .picture-list{
-    width: 400px;
+    width: 374px;
     height: 60px;
-    overflow: hidden;
     margin-top: 10px;
     position: relative;
+    padding: 0 13px;
+}
+.zoom-view-main .picture-list .picture-list-wrapper{
+    width: 100%;
+    overflow: hidden;
 }
 .zoom-view-main .picture-list ul{
     height: 60px;
     list-style: none;
-    padding-left: 4px;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
     position: relative;
-    transform: translateX(0);
+    transform: translate(0px);
 }
 .zoom-view-main .picture-list ul li{
     width: 60px;
     height: 60px;
-    padding: 0 9px;
+    padding: 0 8px;
     float: left;
     cursor: pointer;
 }
 .zoom-view-main .picture-list ul li img{
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
+}
+.zoom-view-main .picture-list ul li img.active{
+    border: 2px solid red;
+
 }
 .zoom-view-main .picture-list .arrow{
     position: absolute;
@@ -60,10 +74,10 @@
     color: rgb(165,165,165);
 }
 .zoom-view-main .picture-list .arrow-left{
-    left: 0;
+    left: 0px;
 }
 .zoom-view-main .picture-list .arrow-right{
-    right: 0;
+    right: 0px;
 }
 .zoom-view-main .picture-list .active{
     color: #000000;

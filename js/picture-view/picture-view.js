@@ -3,14 +3,14 @@ var pictureView=(function($){
     var picLength=$(".picture-show-wrapper").find(".figure").length;
     var interval;
     function mouseOverPicture(){
-        $(".picture-list ul li").mouseover(function(){
+        $(".picture-view-main .picture-list ul li").mouseover(function(){
             curIndex=$(this).index();
             _slide($(this));
             clearInterval(interval);
         });
     }
     function mouseOutPicture(){
-        $(".picture-list ul").mouseout(function(){
+        $(".picture-view-main .picture-list ul").mouseout(function(){
             autoSlide();
         });
     }
@@ -18,7 +18,7 @@ var pictureView=(function($){
         interval=setInterval(function(){
             var tempIndex=curIndex+1;
             curIndex=tempIndex>=picLength?0:tempIndex;
-            _slide($(".picture-list ul li").eq(curIndex));
+            _slide($(".picture-view-main .picture-list ul li").eq(curIndex));
         },3000);
     }
     function _slide(obj){
