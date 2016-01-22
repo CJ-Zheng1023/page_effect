@@ -50,7 +50,7 @@ var zoomView=(function($){
     function pictureMouseOver(){
         $(".zoom-view-main .picture-list ul li img").mouseover(function(){
             $(".zoom-view-main .view-box img").attr("src","css/zoom-view/images/"+($(this).parent().index()+1)+"_md.jpg");
-            $(".zoom-view-main .zoom-box img").attr("src","css/zoom-view/images/"+($(this).parent().index()+1)+"_md.jpg");
+            $(".zoom-view-main .zoom-box img").attr("src","css/zoom-view/images/"+($(this).parent().index()+1)+"_lg.jpg");
             $(this).addClass("active").parent().siblings().find("img").removeClass("active");
         })
     }

@@ -34,7 +34,7 @@
     width: 400px;
     height: 400px;
     top: 0;
-    left: 405px;
+    left: 415px;
     position: absolute;
     border: 1px solid rgb(239,237,240);
     overflow: hidden;
@@ -50,6 +50,7 @@
     background-image: url("images/selector.png");
     background-repeat: repeat;
     display: none;
+    cursor: crosshair;
 }
 .zoom-view-main .view-box .zoom-icon{
     position: absolute;
